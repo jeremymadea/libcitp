@@ -1,0 +1,16 @@
+* Add safer API layer for packet creation. 
+* Make dangerous citp_build_* functions private. 
+* lightingconsole.c
+* refactor into msex.[ch], sdmx.[ch], pinf.[ch], etc. 
+* OOC techniques. 
+    struct citp_message { 
+        citp_msg_class * class; 
+        size_t           raw_message_size_requirement;
+        void *           message;
+    }
+
+    struct citp_msg_class {
+        citp_msg_ctor ctor; 
+        citp_msg_dtor dtor; 
+    }
+

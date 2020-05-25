@@ -1,0 +1,7 @@
+
+
+Questions: 
+
+In CITP SDMX UNam, why is the universe index only 8 bits? (Can't there be 512 universes?)
+
+
